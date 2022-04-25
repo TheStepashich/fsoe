@@ -6,6 +6,7 @@
 
 :root {
     --txt-color: #eeeeee;
+    --header-color: #202020be;
 }
 html, body {
     width: 100%;
@@ -14,6 +15,10 @@ html, body {
     
     
 }
+.bcolor{
+    background-color: #00000085;
+    height: 100%;
+}
 #myVideo {
     position: fixed;
     right: 0;
@@ -21,25 +26,26 @@ html, body {
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
+    filter: blur(2px);
+    transform: scale(1.2); 
+    
 }
 
 header {
     width: 100%;
-    position: absolute;
+    position:sticky;
     left: 0;
     top: 0;
     height: 80px;
-    background-color: var(--header-color);
+    z-index: 10;
 }
 main{
-    margin-top: 120px;
+    
 }
   
 .content{
     max-width: 1000px;
     margin: auto;
-    background-color: #1f141038;
-    padding-top: 40px;
 }
 .m_c{
     background-color: #1f1410;
@@ -84,7 +90,7 @@ main{
     display: flex;
 }
 .box{
-    padding: 0px 100px;
+    padding: 0px 30px 20px 30px;
     margin: 20px 0px;
 }
 .img_l{
@@ -110,4 +116,38 @@ main{
     font-size: 22px;
     text-align: center;
     margin: 30px 0px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-color: #eeeeee;
+    border-style:dotted;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    padding-top: 20px;
+}
+tr{
+    
+}
+th{
+    text-align: center;
+    padding: 0px 15px;
+}
+td{
+    padding: 5px 15px;
+    text-align: center;
+}
+.gtable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gt{
+    width: 87%;
+    height: 500px;
+    text-align: center;
+}
+.leader{
+    margin-bottom: 100px;
 }
